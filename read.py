@@ -15,5 +15,12 @@ len_100 = []
 for d in data :
 	if len(d) < 100 :
 		len_100.append(d)
-
 print('有', len(len_100), '筆資料長度小於100')
+
+#篩選留言內容有bad
+bad = []
+for d in data :
+	if 'bad' in d :
+		bad.append(d)
+print('有', len(bad), '筆資料內容有bad')
+print(bad[0])
